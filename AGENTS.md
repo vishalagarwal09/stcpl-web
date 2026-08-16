@@ -11,9 +11,8 @@ Corporate B2B website for Shree Texfab Creations Pvt. Ltd. Next.js 15 (App Route
 ## Build & deploy
 - `npm run build` → static export into `out/`. (Verified: passes, prerenders all routes.)
 - `npm run start` → serve the Next build locally (not used in prod; static `out/` is served by nginx).
-- `npm run deploy` → `npm run build && wrangler pages deploy out --project-name=stcpl-web`
-- `npm run deploy:preview` → same against a `preview` branch.
-- Cloudflare deploy requires a one-time `npx wrangler login` first (no token in repo). `wrangler.toml` points the bucket at `./out`.
+- Deployment is via **Cloudflare Pages Git integration** (repo linked to Pages; build command `npm run build`, output dir `out/`). No `wrangler.toml` and no `wrangler` CLI needed — pushing to `main` triggers a build.
+- The old `npm run deploy` / `npm run deploy:preview` scripts (which called `wrangler pages deploy` against a `wrangler.toml`) are now broken under wrangler v4's deprecated `[site]` format and should not be used.
 
 ## Conventions
 - **All site content lives in `src/data/` and `src/lib/constants.ts`.** Edit copy/products/nav/team there — never inline in components. Components are presentational and import from those modules.
