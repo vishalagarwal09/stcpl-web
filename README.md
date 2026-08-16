@@ -88,18 +88,16 @@ npm run build
 
 ## Deployment
 
-### Cloudflare Pages (recommended)
+### Cloudflare Pages (recommended — static export via Git integration)
 
-```bash
-# One-time: login to Cloudflare
-npx wrangler login
+This site uses `output: 'export'` (pure static `out/`), so deploy it as a **static site**, NOT via Cloudflare's Next.js/OpenNext preset.
 
-# Build + deploy to Cloudflare Pages
-npm run deploy
-
-# Deploy preview branch
-npm run deploy:preview
-```
+1. Dashboard → Workers & Pages → Create → Pages → Connect to Git → select this repo.
+2. Project name: `stcpl-web`. Production branch: `main`.
+3. **Framework preset: None** (or "HTML"). Do NOT use the "Next.js" preset — it runs `opennextjs-cloudflare build`, which needs a server build this static export does not produce.
+4. **Build command: `npm run build`**
+5. **Build output directory: `out`**
+6. Save and Deploy. Pushing to `main` redeploys automatically; PRs get preview URLs.
 
 First deploy creates the project at `stcpl-web.pages.dev`. Add a custom domain in the Cloudflare Dashboard → Pages → Custom Domains.
 
