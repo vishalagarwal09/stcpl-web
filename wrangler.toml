@@ -1,0 +1,6 @@
+name = "stcpl-web"
+compatibility_date = "2024-01-01"
+
+# Static export: next.config.ts sets output: 'export', so `npm run build`
+# writes the site to ./out. This pins the Pages build output directory.
+pages_build_output_dir = "out"
