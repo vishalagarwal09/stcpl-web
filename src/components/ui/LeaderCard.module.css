@@ -1,0 +1,39 @@
+.card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-top: 3px solid var(--gold);
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0 auto 1.25rem;
+}
+.name {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 0.4rem;
+}
+.role {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.desc {
+  font-size: 0.85rem;
+  color: var(--grey);
+  line-height: 1.7;
+}

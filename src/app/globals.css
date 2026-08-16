@@ -1,0 +1,164 @@
+/* ─── Design Tokens ──────────────────────────────────────── */
+:root {
+  --navy:        #001F4C;
+  --navy-light:  #0a2d6e;
+  --gold:        #C5A059;
+  --gold-light:  #d4b57a;
+  --ivory:       #FBF5E9;
+  --ivory-dark:  #ede8da;
+  --grey:        #63666A;
+  --white:       #FFFFFF;
+  --dark:        #0D0D0D;
+  --footer-bg:   #040d1a;
+
+  --font-heading: var(--font-lora), Georgia, 'Times New Roman', serif;
+  --font-body:    var(--font-montserrat), 'Helvetica Neue', Arial, sans-serif;
+
+  --container-max: 1200px;
+  --container-pad: 2rem;
+  --section-pad:   5rem;
+
+  --transition-fast: 0.2s ease;
+  --transition-mid:  0.3s ease;
+}
+
+/* ─── Reset ──────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--dark);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+img, svg { display: block; max-width: 100%; }
+a { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+input, select, textarea { font-family: inherit; }
+
+/* ─── Layout Utilities ───────────────────────────────────── */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+section { padding: var(--section-pad) 0; }
+
+/* ─── Typography Utilities ───────────────────────────────── */
+.section-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.section-sub {
+  font-size: 1rem;
+  color: var(--grey);
+  max-width: 600px;
+  line-height: 1.8;
+}
+.section-header { margin-bottom: 3.5rem; }
+.section-header.center { text-align: center; }
+.section-header.center .section-sub { margin: 0 auto; }
+
+/* ─── Button Utilities ───────────────────────────────────── */
+.btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: none;
+  text-align: center;
+  line-height: 1;
+}
+.btn-primary {
+  background: var(--navy);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--navy-light);
+  transform: translateY(-2px);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+.btn-outline:hover {
+  background: var(--navy);
+  color: var(--white);
+}
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+}
+.btn-gold:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+.btn-outline-white {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.btn-outline-white:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--white);
+}
+
+/* ─── Tag / Chip ─────────────────────────────────────────── */
+.tag-navy {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.tag-gold-border {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  color: var(--gold);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ─── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --section-pad: 3.5rem;
+    --container-pad: 1.25rem;
+  }
+}

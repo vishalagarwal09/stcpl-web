@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shree Texfab Creations | Textile Manufacturer &amp; Fabric Supplier India</title>
+  <meta name="description" content="Shree Texfab Creations is an Indian textile company supplying suiting, shirting, uniform and specialty fabrics for domestic and international buyers." />
+  <meta name="keywords" content="textile manufacturer India, fabric manufacturer India, suiting fabric manufacturer, shirting fabric supplier, uniform fabric manufacturer, Bhilwara textile manufacturer" />
+  <meta property="og:title" content="Shree Texfab Creations | Textile Manufacturer &amp; Fabric Supplier India" />
+  <meta property="og:description" content="Shree Texfab Creations is an Indian textile company supplying suiting, shirting, uniform and specialty fabrics for domestic and international buyers." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://shreetexfab.in/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── CSS Variables ─────────────────────────────────── */
+    :root {
+      --navy:    #001F4C;
+      --gold:    #C5A059;
+      --ivory:   #FBF5E9;
+      --grey:    #63666A;
+      --white:   #FFFFFF;
+      --dark:    #0D0D0D;
+      --navy-light: #0a2d6e;
+      --gold-light: #d4b57a;
+      --ivory-dark: #ede8da;
+    }
+
+    /* ─── Reset & Base ──────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--white);
+      color: var(--dark);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ─── Typography ────────────────────────────────────── */
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .section-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--navy);
+      margin-bottom: 1rem;
+    }
+    .section-sub {
+      font-size: 1rem;
+      color: var(--grey);
+      max-width: 600px;
+      line-height: 1.8;
+    }
+
+    /* ─── Layout ────────────────────────────────────────── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    section { padding: 5rem 0; }
+    .section-header { margin-bottom: 3.5rem; }
+    .section-header.center { text-align: center; }
+    .section-header.center .section-sub { margin: 0 auto; }
+
+    /* ─── Buttons ───────────────────────────────────────── */
+    .btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: none;
+    }
+    .btn-primary {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .btn-primary:hover { background: var(--navy-light); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 2px solid var(--navy);
+    }
+    .btn-outline:hover { background: var(--navy); color: var(--white); }
+    .btn-gold {
+      background: var(--gold);
+      color: var(--navy);
+    }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline-white {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.7);
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+
+    /* ─── Navigation ────────────────────────────────────── */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(0,31,76,0.08);
+      transition: box-shadow 0.3s;
+    }
+    #navbar.scrolled { box-shadow: 0 2px 20px rgba(0,31,76,0.12); }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nav-logo-img {
+      height: 52px;
+      width: auto;
+    }
+    .nav-logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-logo-name {
+      font-family: 'Lora', serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 0.05em;
+      line-height: 1.2;
+    }
+    .nav-logo-sub {
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-links a {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0; height: 2px;
+      background: var(--gold);
+      transition: width 0.25s;
+    }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta { margin-left: 1rem; }
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--navy);
+      transition: all 0.3s;
+    }
+
+    /* ─── Hero ──────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--navy) 0%, #0a2458 50%, #12326e 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+    }
+    .hero-bg-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(
+          45deg,
+          rgba(197,160,89,0.04) 0px,
+          rgba(197,160,89,0.04) 1px,
+          transparent 1px,
+          transparent 20px
+        ),
+        repeating-linear-gradient(
+          -45deg,
+          rgba(197,160,89,0.04) 0px,
+          rgba(197,160,89,0.04) 1px,
+          transparent 1px,
+          transparent 20px
+        );
+      pointer-events: none;
+    }
+    .hero-accent-circle {
+      position: absolute;
+      right: -10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 55vw;
+      height: 55vw;
+      max-width: 700px;
+      max-height: 700px;
+      border-radius: 50%;
+      border: 1px solid rgba(197,160,89,0.15);
+      pointer-events: none;
+    }
+    .hero-accent-circle::before {
+      content: '';
+      position: absolute;
+      inset: 15%;
+      border-radius: 50%;
+      border: 1px solid rgba(197,160,89,0.1);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      padding-top: 5rem;
+    }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow-line {
+      width: 40px; height: 1px;
+      background: var(--gold);
+    }
+    .hero-eyebrow-text {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hero-heading {
+      font-family: 'Lora', serif;
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    .hero-heading span { color: var(--gold); }
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .hero-bottom {
+      position: absolute;
+      bottom: 2.5rem; left: 0; right: 0;
+      z-index: 2;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      padding: 0 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .hero-stat-item { color: var(--white); }
+    .hero-stat-num {
+      font-family: 'Lora', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--gold);
+      display: block;
+    }
+    .hero-stat-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* ─── Intro ─────────────────────────────────────────── */
+    #intro {
+      background: var(--ivory);
+    }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    .intro-text .section-sub { margin-top: 1rem; }
+    .intro-quote {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--navy);
+      border-left: 3px solid var(--gold);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      line-height: 1.7;
+    }
+    .intro-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .intro-card {
+      background: var(--white);
+      padding: 2rem 1.5rem;
+      border-bottom: 3px solid var(--gold);
+      transition: transform 0.25s;
+    }
+    .intro-card:hover { transform: translateY(-4px); }
+    .intro-card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+    }
+    .intro-card-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .intro-card-text {
+      font-size: 0.85rem;
+      color: var(--grey);
+    }
+    .intro-card.span2 { grid-column: 1 / -1; }
+
+    /* ─── Products ──────────────────────────────────────── */
+    #products {
+      background: var(--white);
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .product-card {
+      position: relative;
+      background: var(--ivory);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.25s;
+    }
+    .product-card:hover { transform: translateY(-6px); }
+    .product-card-img {
+      height: 200px;
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    .product-card-img svg {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      opacity: 0.15;
+    }
+    .product-card-img-bg {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-card-img-icon {
+      font-size: 4rem;
+      opacity: 0.3;
+    }
+    .product-card-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,31,76,0.85));
+      padding: 1.5rem 1.25rem 1rem;
+    }
+    .product-card-cat {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .product-card-title {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .product-card-body {
+      padding: 1.25rem;
+    }
+    .product-card-desc {
+      font-size: 0.85rem;
+      color: var(--grey);
+      line-height: 1.7;
+    }
+    .product-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      transition: gap 0.2s;
+    }
+    .product-card-link:hover { gap: 0.75rem; color: var(--gold); }
+    /* Product gradient backgrounds */
+    .pc-suiting   .product-card-img { background: linear-gradient(135deg, #0d2b5e, #1a3d7c); }
+    .pc-shirting  .product-card-img { background: linear-gradient(135deg, #1a3a2a, #2a5e40); }
+    .pc-uniform   .product-card-img { background: linear-gradient(135deg, #3d1a0a, #6b2f10); }
+    .pc-corporate .product-card-img { background: linear-gradient(135deg, #1a1a3d, #2d2d6b); }
+    .pc-printed   .product-card-img { background: linear-gradient(135deg, #3d1a2a, #6b1040); }
+    .pc-specialty .product-card-img { background: linear-gradient(135deg, #1a2d3d, #2a4a5e); }
+
+    /* ─── Why Us ─────────────────────────────────────────── */
+    #why-us {
+      background: var(--navy);
+    }
+    #why-us .section-title { color: var(--white); }
+    #why-us .section-label { color: var(--gold); }
+    #why-us .section-sub { color: rgba(255,255,255,0.65); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .why-card {
+      padding: 2rem 1.75rem;
+      border: 1px solid rgba(197,160,89,0.2);
+      transition: border-color 0.25s, background 0.25s;
+    }
+    .why-card:hover {
+      border-color: var(--gold);
+      background: rgba(197,160,89,0.05);
+    }
+    .why-icon {
+      width: 52px; height: 52px;
+      background: rgba(197,160,89,0.15);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 1.25rem;
+    }
+    .why-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .why-card p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.75;
+    }
+
+    /* ─── Process Strip ─────────────────────────────────── */
+    #process {
+      background: var(--ivory-dark);
+      padding: 4rem 0;
+    }
+    .process-label {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .process-flow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .process-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      text-align: center;
+      padding: 1.25rem 1rem;
+    }
+    .process-step-dot {
+      width: 52px; height: 52px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      color: var(--white);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .process-step-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+    .process-arrow {
+      color: var(--gold);
+      font-size: 1.2rem;
+      padding: 0 0.25rem;
+      font-weight: 700;
+    }
+    .process-note {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--grey);
+      font-style: italic;
+    }
+
+    /* ─── Applications ──────────────────────────────────── */
+    #applications { background: var(--white); }
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .app-card {
+      padding: 2rem 1.5rem;
+      background: var(--ivory);
+      border-top: 3px solid transparent;
+      transition: border-color 0.25s, transform 0.25s;
+      text-align: center;
+    }
+    .app-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .app-icon {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .app-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.6rem;
+    }
+    .app-desc {
+      font-size: 0.83rem;
+      color: var(--grey);
+      line-height: 1.6;
+    }
+
+    /* ─── Custom Dev ─────────────────────────────────────── */
+    #custom-dev {
+      background: var(--navy);
+      padding: 5rem 0;
+    }
+    .custom-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    #custom-dev .section-title { color: var(--white); }
+    #custom-dev .section-sub { color: rgba(255,255,255,0.7); }
+    .custom-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    .custom-spec-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: rgba(255,255,255,0.06);
+      border-left: 2px solid var(--gold);
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+    }
+
+    /* ─── Quality ────────────────────────────────────────── */
+    #quality { background: var(--ivory); }
+    .quality-flow {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .quality-step {
+      flex: 1;
+      min-width: 140px;
+      max-width: 180px;
+      padding: 1.75rem 1rem;
+      text-align: center;
+      background: var(--white);
+      position: relative;
+    }
+    .quality-step::after {
+      content: '→';
+      position: absolute;
+      right: -12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--gold);
+      font-size: 1.2rem;
+      font-weight: 700;
+      z-index: 1;
+    }
+    .quality-step:last-child::after { display: none; }
+    .quality-step-num {
+      font-family: 'Lora', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: rgba(0,31,76,0.1);
+      display: block;
+    }
+    .quality-step-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin: 0.4rem 0;
+    }
+    .quality-step-desc {
+      font-size: 0.78rem;
+      color: var(--grey);
+    }
+    .quality-params {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    .quality-param {
+      padding: 0.6rem 1.25rem;
+      background: var(--navy);
+      color: var(--white);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ─── Export ─────────────────────────────────────────── */
+    #exports {
+      background: var(--white);
+    }
+    .export-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .export-services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .export-service {
+      padding: 1.5rem;
+      background: var(--ivory);
+      border-bottom: 2px solid var(--gold);
+    }
+    .export-service-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .export-service-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+    .export-service-desc { font-size: 0.82rem; color: var(--grey); }
+    .export-world {
+      position: relative;
+      background: linear-gradient(135deg, var(--navy), #0a2458);
+      padding: 3rem 2.5rem;
+      color: var(--white);
+    }
+    .export-world-globe {
+      font-size: 6rem;
+      opacity: 0.15;
+      position: absolute;
+      right: 1.5rem;
+      top: 1.5rem;
+    }
+    .export-world h3 {
+      font-size: 1.6rem;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .export-world p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .export-markets {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .export-market {
+      padding: 0.4rem 0.9rem;
+      border: 1px solid rgba(197,160,89,0.4);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* ─── About ──────────────────────────────────────────── */
+    #about { background: var(--ivory); }
+    .about-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+      margin-bottom: 4rem;
+    }
+    .about-text .section-sub {
+      margin-bottom: 1rem;
+      max-width: 100%;
+    }
+    .about-text .section-sub + .section-sub { margin-top: 1rem; }
+    .about-values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .value-card {
+      padding: 1.5rem;
+      background: var(--white);
+      border-left: 3px solid var(--gold);
+    }
+    .value-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .value-desc { font-size: 0.85rem; color: var(--grey); }
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    .leader-card {
+      background: var(--white);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      border-top: 3px solid var(--gold);
+    }
+    .leader-avatar {
+      width: 80px; height: 80px;
+      background: linear-gradient(135deg, var(--navy), var(--navy-light));
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Lora', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin: 0 auto 1.25rem;
+    }
+    .leader-name {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 0.4rem;
+    }
+    .leader-role {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .leader-desc { font-size: 0.85rem; color: var(--grey); line-height: 1.7; }
+
+    /* ─── Contact ────────────────────────────────────────── */
+    #contact { background: var(--white); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .contact-info-block {
+      background: var(--navy);
+      padding: 3rem 2.5rem;
+      color: var(--white);
+    }
+    .contact-info-block h3 {
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .contact-info-block .section-label { margin-bottom: 0.5rem; }
+    .contact-info-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .contact-info-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .contact-info-label {
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+    .contact-info-val {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+    }
+    .contact-form-wrap h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.4rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .contact-form-wrap p {
+      font-size: 0.9rem;
+      color: var(--grey);
+      margin-bottom: 2rem;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1.5px solid rgba(0,31,76,0.15);
+      background: var(--ivory);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.88rem;
+      color: var(--dark);
+      transition: border-color 0.2s;
+      outline: none;
+      -webkit-appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--navy);
+    }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .form-group input[type="file"] {
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+    }
+    .form-required { color: var(--gold); }
+    .form-submit { width: 100%; padding: 1rem; }
+
+    /* ─── CTA Banner ─────────────────────────────────────── */
+    #cta-banner {
+      background: linear-gradient(135deg, var(--navy), #0a2458);
+      padding: 5rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(45deg, rgba(197,160,89,0.04) 0, rgba(197,160,89,0.04) 1px, transparent 1px, transparent 30px);
+    }
+    .cta-content { position: relative; z-index: 1; }
+    .cta-content h2 {
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .cta-content h2 span { color: var(--gold); }
+    .cta-content p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.8;
+    }
+    .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ─── Footer ─────────────────────────────────────────── */
+    #footer {
+      background: #040d1a;
+      color: rgba(255,255,255,0.6);
+      padding: 4rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 2rem;
+    }
+    .footer-brand-name {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+    .footer-brand-sub {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .footer-tagline {
+      font-size: 0.85rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      max-width: 280px;
+    }
+    .footer-col-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+    .footer-links li { margin-bottom: 0.6rem; }
+    .footer-links a {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.55);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-contact-item {
+      font-size: 0.82rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+    .footer-contact-item strong {
+      display: block;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.15rem;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-copy { font-size: 0.78rem; }
+    .footer-legal {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .footer-legal a {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.4);
+      transition: color 0.2s;
+    }
+    .footer-legal a:hover { color: var(--gold); }
+
+    /* ─── WhatsApp Float ─────────────────────────────────── */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      width: 56px; height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(0,0,0,0.3);
+    }
+    .whatsapp-float svg {
+      width: 28px; height: 28px; fill: white;
+    }
+
+    /* ─── Mobile Nav ─────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px; left: 0; right: 0;
+        background: var(--white);
+        padding: 1.5rem 2rem 2rem;
+        border-bottom: 1px solid rgba(0,31,76,0.1);
+        gap: 1.25rem;
+      }
+      .nav-toggle { display: flex; }
+      .nav-cta { display: none; }
+    }
+
+    /* ─── Responsive ─────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .products-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .app-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 768px) {
+      section { padding: 3.5rem 0; }
+      .intro-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .intro-visual { display: none; }
+      .products-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .app-grid { grid-template-columns: 1fr 1fr; }
+      .export-grid { grid-template-columns: 1fr; }
+      .about-intro { grid-template-columns: 1fr; gap: 2.5rem; }
+      .leadership-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .custom-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-stats { flex-wrap: wrap; gap: 1.5rem; }
+      .quality-flow { gap: 0.5rem; }
+      .quality-step { min-width: 100px; }
+    }
+    @media (max-width: 480px) {
+      .app-grid { grid-template-columns: 1fr; }
+      .export-services { grid-template-columns: 1fr; }
+      .about-values { grid-template-columns: 1fr; }
+      .custom-specs { grid-template-columns: 1fr; }
+      .hero-btns { flex-direction: column; }
+      .cta-btns { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Shree Texfab Creations Home">
+        <!-- Inline SVG logo placeholder — swap with <img src="logo_with_background.jpeg"> once hosted -->
+        <svg class="nav-logo-img" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="120" height="80" fill="#001F4C" rx="4"/>
+          <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle"
+            font-family="Georgia,serif" font-size="36" font-weight="700" fill="#C5A059">STC</text>
+        </svg>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Shree Texfab Creations</span>
+          <span class="nav-logo-sub">Private Limited</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#quality">Quality</a></li>
+        <li><a href="#exports">Exports</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Send Enquiry</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════ HERO -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-bg-pattern" aria-hidden="true"></div>
+  <div class="hero-accent-circle" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <div class="hero-eyebrow-line"></div>
+        <span class="hero-eyebrow-text">Indian Textile Expertise &nbsp;·&nbsp; Reliable Fabric Solutions</span>
+      </div>
+
+      <h1 class="hero-heading">
+        Fabrics That<br><span>Perform.</span><br>Partnerships That Last.
+      </h1>
+
+      <p class="hero-sub">
+        Indian textile expertise delivering dependable fabric solutions for suiting, shirting, uniforms and specialty applications — domestic and international.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-gold">Explore Products</a>
+        <a href="#contact" class="btn btn-outline-white">Send an Enquiry</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <div class="hero-stats">
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">40+</span>
+        <span class="hero-stat-label">Years Combined Experience</span>
+      </div>
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">6+</span>
+        <span class="hero-stat-label">Fabric Categories</span>
+      </div>
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">B2B</span>
+        <span class="hero-stat-label">Domestic &amp; Export</span>
+      </div>
+      <div class="hero-stat-item">
+        <span class="hero-stat-num">Custom</span>
+        <span class="hero-stat-label">Fabric Development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ INTRO -->
+<section id="intro" aria-labelledby="intro-heading">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-text">
+        <span class="section-label">About Shree Texfab</span>
+        <h2 class="section-title" id="intro-heading">Textile Expertise. Built Around Your Requirement.</h2>
+        <blockquote class="intro-quote">
+          "We don't just supply fabric. We solve fabric requirements."
+        </blockquote>
+        <p class="section-sub">
+          Shree Texfab Creations Private Limited is an Indian textile company serving the evolving requirements of fabric buyers across domestic and international markets.
+        </p>
+        <p class="section-sub" style="margin-top:1rem;">
+          We specialize in the sourcing, manufacturing coordination, processing and supply of suiting, shirting, uniform and specialty fabrics across a wide range of fibre compositions, constructions, colours, weights and finishes.
+        </p>
+        <a href="#about" class="btn btn-primary" style="margin-top:2rem;">About Shree Texfab</a>
+      </div>
+
+      <div class="intro-visual" aria-hidden="true">
+        <div class="intro-card">
+          <div class="intro-card-icon">🧵</div>
+          <div class="intro-card-title">Manufacturing Network</div>
+          <p class="intro-card-text">Coordinated weaving, dyeing &amp; processing ecosystem.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-card-icon">🌏</div>
+          <div class="intro-card-title">Export Ready</div>
+          <p class="intro-card-text">Serving domestic &amp; international B2B buyers.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-card-icon">🎨</div>
+          <div class="intro-card-title">Custom Development</div>
+          <p class="intro-card-text">Fabrics built around your specification.</p>
+        </div>
+        <div class="intro-card">
+          <div class="intro-card-icon">✅</div>
+          <div class="intro-card-title">Quality Focus</div>
+          <p class="intro-card-text">Structured checks across every production stage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ PRODUCTS -->
+<section id="products" aria-labelledby="products-heading">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-label">Our Fabric Collection</span>
+      <h2 class="section-title" id="products-heading">Premium Fabrics for Every Application</h2>
+      <p class="section-sub">Our product portfolio covers a broad range of woven fabrics designed for apparel, uniforms, institutional and specialty applications.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <article class="product-card pc-suiting">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"><span class="product-card-img-icon">🧥</span></div>
+          <div class="product-card-overlay">
+            <div class="product-card-cat">Woven · Multiple Blends</div>
+            <h3 class="product-card-title">Suiting Fabrics</h3>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-card-desc">Refined fabrics engineered for formalwear, uniforms and contemporary tailoring. Available in PV, PC, TR, Cotton and specialty blends with plain, twill, herringbone and dobby constructions.</p>
+          <a href="#contact" class="product-card-link">Enquire About This Fabric &rarr;</a>
+        </div>
+      </article>
+
+      <article class="product-card pc-shirting">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"><span class="product-card-img-icon">👔</span></div>
+          <div class="product-card-overlay">
+            <div class="product-card-cat">Cotton · PC · PV · Printed</div>
+            <h3 class="product-card-title">Shirting Fabrics</h3>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-card-desc">Comfortable and versatile fabrics designed for formal, corporate and everyday apparel. Solids, stripes, checks, dobby and prints. Available in 36", 44" and 58" widths.</p>
+          <a href="#contact" class="product-card-link">Enquire About This Fabric &rarr;</a>
+        </div>
+      </article>
+
+      <article class="product-card pc-uniform">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"><span class="product-card-img-icon">🏫</span></div>
+          <div class="product-card-overlay">
+            <div class="product-card-cat">Durable · Consistent · Bulk</div>
+            <h3 class="product-card-title">Uniform Fabrics</h3>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-card-desc">Durable, practical and consistent fabrics for schools, corporates, institutions and workwear. Built for colour consistency, easy maintenance and reliable repeat production.</p>
+          <a href="#contact" class="product-card-link">Enquire About This Fabric &rarr;</a>
+        </div>
+      </article>
+
+      <article class="product-card pc-corporate">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"><span class="product-card-img-icon">🏢</span></div>
+          <div class="product-card-overlay">
+            <div class="product-card-cat">Bulk · Institutional</div>
+            <h3 class="product-card-title">Corporate &amp; Institutional</h3>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-card-desc">Reliable fabric solutions for large-scale uniform and institutional requirements. Consistent shade, GSM and width across repeat orders.</p>
+          <a href="#contact" class="product-card-link">Enquire About This Fabric &rarr;</a>
+        </div>
+      </article>
+
+      <article class="product-card pc-printed">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"><span class="product-card-img-icon">🎨</span></div>
+          <div class="product-card-overlay">
+            <div class="product-card-cat">Fashion · Specialty</div>
+            <h3 class="product-card-title">Printed Fabrics</h3>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-card-desc">Printed and digitally developed fabrics for fashion, institutional and specialty applications. Custom designs available for specific requirements.</p>
+          <a href="#contact" class="product-card-link">Enquire About This Fabric &rarr;</a>
+        </div>
+      </article>
+
+      <article class="product-card pc-specialty">
+        <div class="product-card-img">
+          <div class="product-card-img-bg"><span class="product-card-img-icon">⚙️</span></div>
+          <div class="product-card-overlay">
+            <div class="product-card-cat">Custom · Performance</div>
+            <h3 class="product-card-title">Specialty Fabrics</h3>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-card-desc">Custom-developed fabrics engineered around specific performance, construction and finishing requirements. Share your requirement and we'll develop the solution.</p>
+          <a href="#contact" class="product-card-link">Discuss Your Requirement &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center; margin-top:3rem;">
+      <a href="#contact" class="btn btn-primary">Request Product Details</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ WHY US -->
+<section id="why-us" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-label">Why Partner With Us</span>
+      <h2 class="section-title" id="why-heading">One Partner. Multiple Fabric Solutions.</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.65)">Access multiple fabric categories through a single coordinated textile partner with deep industry expertise.</p>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🔬</div>
+        <h3>Textile Expertise</h3>
+        <p>Deep understanding of fabric construction, processing, market requirements and end-use applications built over decades in the textile industry.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📦</div>
+        <h3>Wide Product Capability</h3>
+        <p>Multiple fibre compositions, constructions, weights, widths, colours and finishes — from standard qualities to custom developments.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚙️</div>
+        <h3>Custom Development</h3>
+        <p>Fabrics can be developed around specific customer specifications — composition, construction, GSM, width, colour, finish and performance.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">✅</div>
+        <h3>Quality Focus</h3>
+        <p>Structured quality checks throughout sourcing, production, processing and final dispatch for consistency in every metre supplied.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🚚</div>
+        <h3>Reliable Supply</h3>
+        <p>Coordinated production and sourcing enables dependable fulfilment of bulk requirements with repeatability and timely execution.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3>Long-Term Partnerships</h3>
+        <p>We believe in building relationships beyond individual transactions — consistency, responsiveness and commitment are central to how we work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ PROCESS STRIP -->
+<section id="process" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="process-label">
+      <span class="section-label" style="text-align:center; display:block;">Our Coordinated Textile Manufacturing Ecosystem</span>
+      <h2 class="section-title" id="process-heading" style="text-align:center; color:var(--navy);">From Yarn to Finished Fabric</h2>
+    </div>
+
+    <div class="process-flow" role="list">
+      <div class="process-step" role="listitem">
+        <div class="process-step-dot">🧶</div>
+        <span class="process-step-label">Yarn</span>
+      </div>
+      <div class="process-arrow" aria-hidden="true">›</div>
+      <div class="process-step" role="listitem">
+        <div class="process-step-dot">🪡</div>
+        <span class="process-step-label">Weaving</span>
+      </div>
+      <div class="process-arrow" aria-hidden="true">›</div>
+      <div class="process-step" role="listitem">
+        <div class="process-step-dot">🎨</div>
+        <span class="process-step-label">Dyeing</span>
+      </div>
+      <div class="process-arrow" aria-hidden="true">›</div>
+      <div class="process-step" role="listitem">
+        <div class="process-step-dot">⚙️</div>
+        <span class="process-step-label">Processing</span>
+      </div>
+      <div class="process-arrow" aria-hidden="true">›</div>
+      <div class="process-step" role="listitem">
+        <div class="process-step-dot">✨</div>
+        <span class="process-step-label">Finishing</span>
+      </div>
+      <div class="process-arrow" aria-hidden="true">›</div>
+      <div class="process-step" role="listitem">
+        <div class="process-step-dot">🔍</div>
+        <span class="process-step-label">Inspection</span>
+      </div>
+      <div class="process-arrow" aria-hidden="true">›</div>
+      <div class="process-step" role="listitem">
+        <div class="process-step-dot">📦</div>
+        <span class="process-step-label">Packing</span>
+      </div>
+      <div class="process-arrow" aria-hidden="true">›</div>
+      <div class="process-step" role="listitem">
+        <div class="process-step-dot">🚛</div>
+        <span class="process-step-label">Delivery</span>
+      </div>
+    </div>
+
+    <p class="process-note">Our manufacturing and processing ecosystem brings together specialized weaving, dyeing, finishing and processing partners under coordinated quality and production management.</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ APPLICATIONS -->
+<section id="applications" aria-labelledby="app-heading">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-label">Industries Served</span>
+      <h2 class="section-title" id="app-heading">Fabrics for Every Requirement</h2>
+      <p class="section-sub">From formal offices to industrial floors — our fabric solutions are built around the end application and the customer's performance requirements.</p>
+    </div>
+
+    <div class="app-grid">
+      <div class="app-card">
+        <div class="app-icon">🏢</div>
+        <div class="app-title">Corporate</div>
+        <p class="app-desc">Corporate uniforms and formalwear for offices and service organizations.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">🎓</div>
+        <div class="app-title">Education</div>
+        <p class="app-desc">School and college uniforms — durable fabrics for regular use and repeated laundering.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">🏨</div>
+        <div class="app-title">Hospitality</div>
+        <p class="app-desc">Fabrics for hotel, restaurant and hospitality personnel uniforms.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">⚙️</div>
+        <div class="app-title">Industrial</div>
+        <p class="app-desc">Functional fabrics for workwear and industrial applications.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">✂️</div>
+        <div class="app-title">Fashion &amp; Apparel</div>
+        <p class="app-desc">Contemporary fabrics for designers, brands and garment manufacturers.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">🛍️</div>
+        <div class="app-title">Retail</div>
+        <p class="app-desc">Suiting and shirting collections for retail fabric buyers and distributors.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">🏛️</div>
+        <div class="app-title">Institutional</div>
+        <p class="app-desc">Large-volume fabric requirements for hospitals, security and government institutions.</p>
+      </div>
+      <div class="app-card">
+        <div class="app-icon">🌏</div>
+        <div class="app-title">Export</div>
+        <p class="app-desc">International apparel and textile supply with full coordination support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ CUSTOM DEV -->
+<section id="custom-dev" aria-labelledby="custom-heading">
+  <div class="container">
+    <div class="custom-inner">
+      <div>
+        <span class="section-label">Custom Fabric Development</span>
+        <h2 class="section-title" id="custom-heading">Have a Fabric Requirement?</h2>
+        <p class="section-sub" style="margin-top:1rem;">
+          Tell us your required composition, construction, GSM, width, colour, finish and end application. Our team will work with you to develop a suitable fabric solution through our textile manufacturing network.
+        </p>
+        <a href="#contact" class="btn btn-gold" style="margin-top:2rem;">Start a Development</a>
+      </div>
+      <div>
+        <p style="font-size:0.75rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:1.25rem;">You can provide:</p>
+        <div class="custom-specs">
+          <div class="custom-spec-item">📄 Fabric Sample</div>
+          <div class="custom-spec-item">📷 Fabric Photo</div>
+          <div class="custom-spec-item">📐 Technical Spec</div>
+          <div class="custom-spec-item">🧵 Composition</div>
+          <div class="custom-spec-item">⚖️ GSM Requirement</div>
+          <div class="custom-spec-item">📏 Width Required</div>
+          <div class="custom-spec-item">🎨 Colour Requirement</div>
+          <div class="custom-spec-item">🏷️ End Application</div>
+          <div class="custom-spec-item">💰 Target Price</div>
+          <div class="custom-spec-item">📦 Quantity Needed</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ QUALITY -->
+<section id="quality" aria-labelledby="quality-heading">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-label">Quality Assurance</span>
+      <h2 class="section-title" id="quality-heading">Quality is Built Into Every Metre.</h2>
+      <p class="section-sub">Our quality approach focuses on consistency in construction, colour, weight, width, finish and overall fabric performance — from first specification to final dispatch.</p>
+    </div>
+
+    <div class="quality-flow" role="list">
+      <div class="quality-step" role="listitem">
+        <span class="quality-step-num">01</span>
+        <div class="quality-step-title">Specification Review</div>
+        <p class="quality-step-desc">Understand customer's technical requirement.</p>
+      </div>
+      <div class="quality-step" role="listitem">
+        <span class="quality-step-num">02</span>
+        <div class="quality-step-title">Raw Material Check</div>
+        <p class="quality-step-desc">Review yarn/fabric quality against specification.</p>
+      </div>
+      <div class="quality-step" role="listitem">
+        <span class="quality-step-num">03</span>
+        <div class="quality-step-title">Production Monitoring</div>
+        <p class="quality-step-desc">Coordinate production and monitor quality parameters.</p>
+      </div>
+      <div class="quality-step" role="listitem">
+        <span class="quality-step-num">04</span>
+        <div class="quality-step-title">Processing Control</div>
+        <p class="quality-step-desc">Monitor shade, width, GSM, finish and shrinkage.</p>
+      </div>
+      <div class="quality-step" role="listitem">
+        <span class="quality-step-num">05</span>
+        <div class="quality-step-title">Final Inspection</div>
+        <p class="quality-step-desc">Inspect finished fabric before dispatch.</p>
+      </div>
+      <div class="quality-step" role="listitem">
+        <span class="quality-step-num">06</span>
+        <div class="quality-step-title">Packing &amp; Dispatch</div>
+        <p class="quality-step-desc">Pack according to customer requirements.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;">
+      <p style="text-align:center; font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:1.25rem;">Quality Parameters Monitored</p>
+      <div class="quality-params">
+        <span class="quality-param">GSM</span>
+        <span class="quality-param">Width</span>
+        <span class="quality-param">Shade</span>
+        <span class="quality-param">Construction</span>
+        <span class="quality-param">Shrinkage</span>
+        <span class="quality-param">Colour Fastness</span>
+        <span class="quality-param">Appearance</span>
+        <span class="quality-param">Finish</span>
+        <span class="quality-param">Defects</span>
+        <span class="quality-param">Packing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ EXPORTS -->
+<section id="exports" aria-labelledby="export-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Global Textile Sourcing</span>
+      <h2 class="section-title" id="export-heading">From India to the World</h2>
+      <p class="section-sub">India is one of the world's leading textile manufacturing ecosystems. Shree Texfab combines access to this ecosystem with customer-focused sourcing and production coordination to serve international buyers.</p>
+    </div>
+
+    <div class="export-grid">
+      <div class="export-services">
+        <div class="export-service">
+          <div class="export-service-icon">🔬</div>
+          <div class="export-service-title">Product Development</div>
+          <p class="export-service-desc">Development based on buyer specification.</p>
+        </div>
+        <div class="export-service">
+          <div class="export-service-icon">🔗</div>
+          <div class="export-service-title">Sourcing</div>
+          <p class="export-service-desc">From appropriate Indian manufacturing partners.</p>
+        </div>
+        <div class="export-service">
+          <div class="export-service-icon">✅</div>
+          <div class="export-service-title">Quality Control</div>
+          <p class="export-service-desc">Pre-dispatch quality coordination and inspection.</p>
+        </div>
+        <div class="export-service">
+          <div class="export-service-icon">📄</div>
+          <div class="export-service-title">Documentation</div>
+          <p class="export-service-desc">Commercial and shipping documentation coordination.</p>
+        </div>
+        <div class="export-service">
+          <div class="export-service-icon">📦</div>
+          <div class="export-service-title">Packing</div>
+          <p class="export-service-desc">Export-oriented packing as required.</p>
+        </div>
+        <div class="export-service">
+          <div class="export-service-icon">🚢</div>
+          <div class="export-service-title">Logistics</div>
+          <p class="export-service-desc">Coordination with logistics and shipping partners.</p>
+        </div>
+      </div>
+
+      <div class="export-world">
+        <div class="export-world-globe" aria-hidden="true">🌐</div>
+        <h3>Export-Ready Textile Partner</h3>
+        <p>We support international customers with product development, production coordination, quality inspection, documentation and shipment coordination — from enquiry to delivery.</p>
+
+        <div class="export-markets" aria-label="Target markets">
+          <span class="export-market">Europe</span>
+          <span class="export-market">Middle East</span>
+          <span class="export-market">Africa</span>
+          <span class="export-market">Southeast Asia</span>
+          <span class="export-market">Latin America</span>
+        </div>
+
+        <p style="font-size:0.75rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem;">Export Buyer Process</p>
+        <div style="display:flex; flex-wrap:wrap; gap:0.35rem; align-items:center;">
+          <span style="font-size:0.72rem; color:rgba(255,255,255,0.7);">Enquiry</span>
+          <span style="color:var(--gold);">›</span>
+          <span style="font-size:0.72rem; color:rgba(255,255,255,0.7);">Requirement</span>
+          <span style="color:var(--gold);">›</span>
+          <span style="font-size:0.72rem; color:rgba(255,255,255,0.7);">Sample</span>
+          <span style="color:var(--gold);">›</span>
+          <span style="font-size:0.72rem; color:rgba(255,255,255,0.7);">Commercial</span>
+          <span style="color:var(--gold);">›</span>
+          <span style="font-size:0.72rem; color:rgba(255,255,255,0.7);">Order</span>
+          <span style="color:var(--gold);">›</span>
+          <span style="font-size:0.72rem; color:rgba(255,255,255,0.7);">Production</span>
+          <span style="color:var(--gold);">›</span>
+          <span style="font-size:0.72rem; color:rgba(255,255,255,0.7);">Dispatch</span>
+        </div>
+
+        <a href="#contact" class="btn btn-gold" style="margin-top:2rem;">Become a Buyer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ ABOUT -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">About Us</span>
+      <h2 class="section-title" id="about-heading">Rooted in Textiles. Built for the Future.</h2>
+    </div>
+
+    <div class="about-intro">
+      <div class="about-text">
+        <p class="section-sub">Shree Texfab Creations Private Limited is an Indian textile company focused on supplying dependable fabric solutions to customers across domestic and international markets.</p>
+        <p class="section-sub" style="margin-top:1rem;">Our business combines textile experience, market understanding, sourcing capabilities and coordinated manufacturing to serve a diverse range of fabric requirements.</p>
+        <p class="section-sub" style="margin-top:1rem;">Shree Texfab's journey has been shaped by extensive experience in the Indian textile industry and a practical understanding of what fabric buyers actually need — consistency, quality, competitive value and dependable supply.</p>
+        <p class="section-sub" style="margin-top:1rem;">Our approach combines established textile relationships with contemporary business practices, structured quality management and a customer-first approach.</p>
+      </div>
+
+      <div>
+        <p style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--navy); margin-bottom:1.5rem;">Our Values</p>
+        <div class="about-values">
+          <div class="value-card">
+            <div class="value-title">Integrity</div>
+            <p class="value-desc">We conduct business with transparency and responsibility.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Quality</div>
+            <p class="value-desc">We focus on consistency in every metre supplied.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Reliability</div>
+            <p class="value-desc">We value dependable commitments and timely execution.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-title">Innovation</div>
+            <p class="value-desc">We continuously explore new constructions, blends, finishes and applications.</p>
+          </div>
+          <div class="value-card" style="grid-column: 1 / -1;">
+            <div class="value-title">Partnership</div>
+            <p class="value-desc">We build long-term relationships with customers, suppliers and manufacturing partners.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem; padding:1.5rem; background:var(--white); border-left:3px solid var(--gold);">
+          <p style="font-size:0.72rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:var(--navy); margin-bottom:0.5rem;">Our Vision</p>
+          <p style="font-size:0.9rem; color:var(--grey);">To build a trusted Indian textile enterprise known for quality, reliability, innovation and long-term customer partnerships.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership -->
+    <div style="margin-top:4rem;">
+      <p style="font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--navy); margin-bottom:2rem; text-align:center;">Leadership</p>
+      <div class="leadership-grid">
+        <div class="leader-card">
+          <div class="leader-avatar">MA</div>
+          <h3 class="leader-name">Mukesh Kumar Agarwal</h3>
+          <p class="leader-role">Textile Industry Experience</p>
+          <p class="leader-desc">Brings extensive experience in the textile industry, with deep knowledge of fabric sourcing, manufacturing, processing and market requirements.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">BA</div>
+          <h3 class="leader-name">Bhavya Agarwal</h3>
+          <p class="leader-role">Chartered Accountant | Textile Business Professional</p>
+          <p class="leader-desc">A Chartered Accountant with extensive experience in textile business operations, finance, commercial management and business development.</p>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">CS</div>
+          <h3 class="leader-name">Chirag Somani</h3>
+          <p class="leader-role">MBA &amp; B.Tech | Textile Marketing &amp; Technical</p>
+          <p class="leader-desc">Combines technical and management education with experience in textile marketing, product development and customer requirements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ CONTACT -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-label">Get in Touch</span>
+      <h2 class="section-title" id="contact-heading">Let's Talk Fabrics.</h2>
+      <p class="section-sub">Have a product requirement, development enquiry or bulk fabric requirement? Tell us what you are looking for and our team will get back to you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-block">
+        <span class="section-label">Contact Details</span>
+        <h3>Shree Texfab Creations<br>Private Limited</h3>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">🏢</span>
+          <div>
+            <span class="contact-info-label">Registered Office</span>
+            <span class="contact-info-val">[Complete Address — To Be Confirmed]</span>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">📞</span>
+          <div>
+            <span class="contact-info-label">Phone / WhatsApp</span>
+            <span class="contact-info-val">[+91 XXXXX XXXXX]</span>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">✉️</span>
+          <div>
+            <span class="contact-info-label">General Enquiries</span>
+            <span class="contact-info-val">info@shreetexfab.in</span>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">💼</span>
+          <div>
+            <span class="contact-info-label">Sales</span>
+            <span class="contact-info-val">sales@shreetexfab.in</span>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <span class="contact-info-icon">🌏</span>
+          <div>
+            <span class="contact-info-label">Export Enquiries</span>
+            <span class="contact-info-val">exports@shreetexfab.in</span>
+          </div>
+        </div>
+
+        <!-- Google Maps placeholder -->
+        <div style="margin-top:2rem; background:rgba(255,255,255,0.06); padding:1.25rem; text-align:center; border:1px dashed rgba(197,160,89,0.3);">
+          <p style="font-size:0.75rem; color:rgba(255,255,255,0.4); letter-spacing:0.1em; text-transform:uppercase;">Google Maps — Location to be embedded once confirmed</p>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <h3>Send Your Enquiry</h3>
+        <p>Fill in the details below and our team will get back to you within one business day.</p>
+
+        <!--
+          ACTION: Replace "info@shreetexfab.in" in the mailto: action once the email is confirmed.
+          For production, connect to a server-side form handler or Formspree/Netlify Forms to
+          avoid exposing the mailto: directly and to ensure reliable delivery.
+        -->
+        <form
+          id="enquiryForm"
+          action="mailto:info@shreetexfab.in"
+          method="POST"
+          enctype="text/plain"
+          novalidate
+          aria-label="Fabric enquiry form"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Name <span class="form-required">*</span></label>
+              <input type="text" id="fname" name="Name" required placeholder="Your full name" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="fcompany">Company Name <span class="form-required">*</span></label>
+              <input type="text" id="fcompany" name="Company" required placeholder="Your company" autocomplete="organization" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fcountry">Country</label>
+              <input type="text" id="fcountry" name="Country" placeholder="Country" autocomplete="country-name" />
+            </div>
+            <div class="form-group">
+              <label for="fphone">Phone / WhatsApp <span class="form-required">*</span></label>
+              <input type="tel" id="fphone" name="Phone" required placeholder="+91 XXXXX XXXXX" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="femail">Email Address <span class="form-required">*</span></label>
+            <input type="email" id="femail" name="Email" required placeholder="your@email.com" autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="frequirement">Product Requirement <span class="form-required">*</span></label>
+            <input type="text" id="frequirement" name="Product_Requirement" required placeholder="e.g. Suiting Fabric — PV, 150 GSM, Grey" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="ffabrictype">Fabric Type</label>
+              <select id="ffabrictype" name="Fabric_Type">
+                <option value="">Select type</option>
+                <option>Suiting</option>
+                <option>Shirting</option>
+                <option>Uniform</option>
+                <option>Corporate / Institutional</option>
+                <option>Printed</option>
+                <option>Specialty / Custom</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fcomposition">Composition</label>
+              <input type="text" id="fcomposition" name="Composition" placeholder="e.g. Polyester/Viscose 80/20" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fgsm">GSM</label>
+              <input type="text" id="fgsm" name="GSM" placeholder="e.g. 150–170 GSM" />
+            </div>
+            <div class="form-group">
+              <label for="fwidth">Width</label>
+              <input type="text" id="fwidth" name="Width" placeholder="e.g. 58 inches" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fqty">Quantity</label>
+              <input type="text" id="fqty" name="Quantity" placeholder="e.g. 5000 metres" />
+            </div>
+            <div class="form-group">
+              <label for="fapp">End Application</label>
+              <input type="text" id="fapp" name="End_Application" placeholder="e.g. School Uniforms" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="fprice">Target Price (optional)</label>
+            <input type="text" id="fprice" name="Target_Price" placeholder="e.g. ₹80–100 per metre" />
+          </div>
+
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="Message" placeholder="Any additional details, specific requirements or questions..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="fattachment">Upload Reference File (optional)</label>
+            <input type="file" id="fattachment" name="Attachment" accept=".pdf,.jpg,.jpeg,.png,.webp,.doc,.docx" />
+            <small style="font-size:0.72rem; color:var(--grey); margin-top:0.4rem; display:block;">Accepted: PDF, JPG, PNG, DOC (max 10 MB)</small>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ CTA BANNER -->
+<section id="cta-banner" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-content">
+      <h2 id="cta-heading">Let's Build the <span>Right Fabric</span><br>for Your Business.</h2>
+      <p>Whether you are looking for an established fabric quality or developing something new, our team is ready to understand your requirement.</p>
+      <div class="cta-btns">
+        <a href="#contact" class="btn btn-gold">Send an Enquiry</a>
+        <a href="#contact" class="btn btn-outline-white">Contact Our Team</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ FOOTER -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Shree Texfab Creations Pvt. Ltd.</div>
+        <div class="footer-brand-sub">Textile Manufacturing · Sourcing · Processing · Export</div>
+        <p class="footer-tagline">Fabrics That Perform. Partnerships That Last.</p>
+        <p style="font-size:0.78rem; line-height:1.6;">Indian Textile Expertise. Reliable Fabric Solutions.<br>Domestic &amp; International B2B Supply.</p>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#why-us">Why Shree Texfab</a></li>
+          <li><a href="#quality">Quality</a></li>
+          <li><a href="#applications">Applications</a></li>
+          <li><a href="#exports">Exports</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Products</p>
+        <ul class="footer-links">
+          <li><a href="#products">Suiting Fabrics</a></li>
+          <li><a href="#products">Shirting Fabrics</a></li>
+          <li><a href="#products">Uniform Fabrics</a></li>
+          <li><a href="#products">Corporate &amp; Institutional</a></li>
+          <li><a href="#products">Printed Fabrics</a></li>
+          <li><a href="#products">Specialty Fabrics</a></li>
+          <li><a href="#contact">Custom Development</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer-col-title">Contact</p>
+        <div class="footer-contact-item">
+          <strong>General</strong>info@shreetexfab.in
+        </div>
+        <div class="footer-contact-item">
+          <strong>Sales</strong>sales@shreetexfab.in
+        </div>
+        <div class="footer-contact-item">
+          <strong>Export</strong>exports@shreetexfab.in
+        </div>
+        <div class="footer-contact-item">
+          <strong>Phone / WhatsApp</strong>[+91 XXXXX XXXXX]
+        </div>
+        <div class="footer-contact-item">
+          <strong>Website</strong>shreetexfab.in
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        &copy; 2025 Shree Texfab Creations Private Limited. All rights reserved.
+      </p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════ WHATSAPP FLOAT -->
+<a
+  href="https://wa.me/91XXXXXXXXXX?text=Hello%20Shree%20Texfab%2C%20I%20would%20like%20to%20enquire%20about%20your%20fabric%20products."
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+  title="Chat with us on WhatsApp"
+>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+
+<!-- ═══════════════════════════════════════════════════════ JS -->
+<script>
+  // Navbar scroll behaviour
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks  = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+
+  // Close mobile nav on link click
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Client-side form validation + UX
+  const form = document.getElementById('enquiryForm');
+  form.addEventListener('submit', (e) => {
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+
+    required.forEach(field => {
+      field.style.borderColor = '';
+      if (!field.value.trim()) {
+        field.style.borderColor = '#c0392b';
+        valid = false;
+      }
+    });
+
+    if (!valid) {
+      e.preventDefault();
+      const first = form.querySelector('[required][style*="c0392b"]');
+      if (first) first.focus();
+      return;
+    }
+
+    // mailto fallback — for production replace with fetch() to a form handler
+  });
+</script>
+
+</body>
+</html>

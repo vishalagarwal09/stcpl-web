@@ -1,0 +1,50 @@
+.hero {
+  background: linear-gradient(135deg, var(--navy), #0a2458);
+  padding: 7rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.pattern {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(197,160,89,0.04) 0,
+    rgba(197,160,89,0.04) 1px,
+    transparent 1px,
+    transparent 25px
+  );
+  pointer-events: none;
+}
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1.25rem;
+}
+.breadcrumbs a {
+  color: rgba(255,255,255,0.6);
+  transition: color var(--transition-fast);
+}
+.breadcrumbs a:hover { color: var(--gold); }
+.sep { margin: 0 0.3rem; color: rgba(255,255,255,0.3); }
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+.title :global(span) { color: var(--gold); }
+.sub {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
+  max-width: 600px;
+  line-height: 1.8;
+}

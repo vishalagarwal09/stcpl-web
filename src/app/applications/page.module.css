@@ -1,0 +1,26 @@
+.detail { padding: var(--section-pad) 0; background: var(--ivory); }
+.detailTitle { margin-bottom: 2.5rem; }
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.detailCard {
+  padding: 1.75rem;
+  background: var(--white);
+  border-top: 3px solid var(--gold);
+}
+.detailIcon { font-size: 1.8rem; display: block; margin-bottom: 0.75rem; }
+.detailSector {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+.detailNote { font-size: 0.82rem; color: var(--grey); line-height: 1.6; margin-bottom: 1rem; }
+.detailFabrics { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+@media (max-width: 1100px) { .detailGrid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) { .detailGrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .detailGrid { grid-template-columns: 1fr; } }

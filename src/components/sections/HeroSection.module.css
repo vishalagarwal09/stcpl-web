@@ -1,0 +1,98 @@
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--navy) 0%, #0a2458 50%, #12326e 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 5rem 0 8rem;
+}
+.bgPattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(197,160,89,0.04) 0, rgba(197,160,89,0.04) 1px, transparent 1px, transparent 20px),
+    repeating-linear-gradient(-45deg, rgba(197,160,89,0.04) 0, rgba(197,160,89,0.04) 1px, transparent 1px, transparent 20px);
+  pointer-events: none;
+}
+.accentCircle {
+  position: absolute;
+  right: -10%; top: 50%; transform: translateY(-50%);
+  width: 55vw; height: 55vw;
+  max-width: 700px; max-height: 700px;
+  border-radius: 50%;
+  border: 1px solid rgba(197,160,89,0.15);
+  pointer-events: none;
+}
+.accentCircle::before {
+  content: '';
+  position: absolute;
+  inset: 15%;
+  border-radius: 50%;
+  border: 1px solid rgba(197,160,89,0.1);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 720px;
+}
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.eyebrowLine { width: 40px; height: 1px; background: var(--gold); }
+.eyebrowText {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.heading span { color: var(--gold); }
+.sub {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.75);
+  max-width: 560px;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+.btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.statsBar {
+  position: absolute;
+  bottom: 2.5rem; left: 0; right: 0;
+  z-index: 2;
+}
+.stats { display: flex; gap: 3rem; flex-wrap: wrap; }
+.statItem { color: var(--white); }
+.statNum {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  display: block;
+}
+.statLabel {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+}
+
+@media (max-width: 600px) {
+  .btns { flex-direction: column; }
+  .stats { gap: 1.5rem; }
+}

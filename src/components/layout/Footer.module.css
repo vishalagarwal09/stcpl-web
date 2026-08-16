@@ -1,0 +1,94 @@
+.footer {
+  background: var(--footer-bg);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 4rem 0 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 2rem;
+}
+.footerLogo {
+  display: block;
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  background: var(--ivory);
+  padding: 4px 8px;
+  margin-bottom: 1.25rem;
+}
+.brandSub {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.tagline {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.75rem;
+}
+.desc { font-size: 0.82rem; line-height: 1.7; max-width: 280px; }
+
+.colTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+.linkList { display: flex; flex-direction: column; gap: 0.6rem; }
+.linkList a {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color var(--transition-fast);
+}
+.linkList a:hover { color: var(--gold); }
+
+.contactItem {
+  margin-bottom: 0.75rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.contactItem strong {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.15rem;
+}
+.contactItem a, .contactItem span { color: rgba(255, 255, 255, 0.7); }
+.contactItem a:hover { color: var(--gold); }
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.copy { font-size: 0.78rem; }
+.legal { display: flex; gap: 1.5rem; }
+.legal a {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color var(--transition-fast);
+}
+.legal a:hover { color: var(--gold); }
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; gap: 2rem; }
+  .bottom { flex-direction: column; text-align: center; }
+}

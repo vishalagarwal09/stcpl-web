@@ -1,0 +1,70 @@
+.form { display: flex; flex-direction: column; gap: 0; }
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.field {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.field label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1.5px solid rgba(0, 31, 76, 0.15);
+  background: var(--ivory);
+  font-size: 0.88rem;
+  color: var(--dark);
+  transition: border-color var(--transition-fast);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus { border-color: var(--navy); }
+.field textarea { resize: vertical; }
+
+.fieldError input,
+.fieldError select,
+.fieldError textarea { border-color: #c0392b; }
+.req { color: var(--gold); }
+.errorMsg { font-size: 0.72rem; color: #c0392b; }
+
+.submit { width: 100%; padding: 1rem; margin-top: 0.5rem; }
+
+.success {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--ivory);
+}
+.successIcon { font-size: 3rem; margin-bottom: 1rem; }
+.success h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--navy);
+  margin-bottom: 0.75rem;
+}
+.success p {
+  font-size: 0.95rem;
+  color: var(--grey);
+  margin-bottom: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .row { grid-template-columns: 1fr; }
+}

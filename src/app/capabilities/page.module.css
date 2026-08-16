@@ -1,0 +1,23 @@
+.capCards { padding: var(--section-pad) 0; background: var(--white); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.card {
+  padding: 2rem;
+  background: var(--ivory);
+  border-top: 3px solid var(--gold);
+}
+.cardIcon { font-size: 2rem; display: block; margin-bottom: 1rem; }
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+}
+.cardDesc { font-size: 0.88rem; color: var(--grey); line-height: 1.7; }
+
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
